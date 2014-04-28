@@ -20,8 +20,8 @@
 @implementation OPLDatabaseFile
 
 - (NSString *)answerForQuery:(NSString *)message {
-    if ([keys containsObject:message]) {
-        return [self.data objectForKey:message];
+    if ([keys containsObject:[message lowercaseString]]) {
+        return [self.data objectForKey:[message lowercaseString]];
     }
 
     return [unknown objectAtIndex: (arc4random() % [unknown count])];
@@ -50,9 +50,9 @@
     // Backup
     if (!_data) {
         _data = [NSDictionary dictionaryWithObjectsAndKeys:
-                 @"what's your name?", @"Morpheus",
-                 @"where were you born?", @"None of your business.",
-                 @"when were you compiled?", @"Last night.",
+                 @"Morpheus", @"what's your name?",
+                 @"None of your business.", @"where were you born?",
+                 @"Last night.", @"when were you compiled?",
                  nil];
     }
 
@@ -61,7 +61,7 @@
     unknown = @[
                 @"I don't know.",
                 @"I'm bored.",
-                @"Lave me alone already."
+                @"Leave me alone already."
                 ];
 
     return self;
