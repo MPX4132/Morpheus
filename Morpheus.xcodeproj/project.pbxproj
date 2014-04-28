@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C345B935190DFF46004ACDA5 /* OPLHumanAI.m in Sources */ = {isa = PBXBuildFile; fileRef = C345B934190DFF46004ACDA5 /* OPLHumanAI.m */; };
+		C345B938190DFF5A004ACDA5 /* OPLComputerAI.m in Sources */ = {isa = PBXBuildFile; fileRef = C345B937190DFF5A004ACDA5 /* OPLComputerAI.m */; };
+		C345B93B190E0216004ACDA5 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C345B93A190E0216004ACDA5 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		C345B93F190E19E2004ACDA5 /* OPLAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C345B93E190E19E2004ACDA5 /* OPLAppController.m */; };
 		C3F85529190DE72A0018FF85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F85528190DE72A0018FF85 /* Cocoa.framework */; };
 		C3F85533190DE72A0018FF85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F85531190DE72A0018FF85 /* InfoPlist.strings */; };
 		C3F85535190DE72A0018FF85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F85534190DE72A0018FF85 /* main.m */; };
@@ -31,6 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C345B933190DFF46004ACDA5 /* OPLHumanAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPLHumanAI.h; sourceTree = "<group>"; };
+		C345B934190DFF46004ACDA5 /* OPLHumanAI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPLHumanAI.m; sourceTree = "<group>"; };
+		C345B936190DFF5A004ACDA5 /* OPLComputerAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPLComputerAI.h; sourceTree = "<group>"; };
+		C345B937190DFF5A004ACDA5 /* OPLComputerAI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPLComputerAI.m; sourceTree = "<group>"; };
+		C345B939190E0216004ACDA5 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		C345B93A190E0216004ACDA5 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		C345B93D190E19E2004ACDA5 /* OPLAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPLAppController.h; sourceTree = "<group>"; };
+		C345B93E190E19E2004ACDA5 /* OPLAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPLAppController.m; sourceTree = "<group>"; };
 		C3F85525190DE72A0018FF85 /* Morpheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morpheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F85528190DE72A0018FF85 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C3F8552B190DE72A0018FF85 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -73,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C345B93C190E021C004ACDA5 /* Sockets Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				C345B939190E0216004ACDA5 /* GCDAsyncSocket.h */,
+				C345B93A190E0216004ACDA5 /* GCDAsyncSocket.m */,
+			);
+			name = "Sockets Wrapper";
+			sourceTree = "<group>";
+		};
 		C3F8551C190DE72A0018FF85 = {
 			isa = PBXGroup;
 			children = (
@@ -115,9 +136,16 @@
 		C3F8552E190DE72A0018FF85 /* Morpheus */ = {
 			isa = PBXGroup;
 			children = (
+				C345B93C190E021C004ACDA5 /* Sockets Wrapper */,
 				C3F8553A190DE72A0018FF85 /* OPLAppDelegate.h */,
 				C3F8553B190DE72A0018FF85 /* OPLAppDelegate.m */,
+				C345B933190DFF46004ACDA5 /* OPLHumanAI.h */,
+				C345B934190DFF46004ACDA5 /* OPLHumanAI.m */,
+				C345B936190DFF5A004ACDA5 /* OPLComputerAI.h */,
+				C345B937190DFF5A004ACDA5 /* OPLComputerAI.m */,
 				C3F8553D190DE72A0018FF85 /* MainMenu.xib */,
+				C345B93D190E19E2004ACDA5 /* OPLAppController.h */,
+				C345B93E190E19E2004ACDA5 /* OPLAppController.m */,
 				C3F85540190DE72A0018FF85 /* Images.xcassets */,
 				C3F8552F190DE72A0018FF85 /* Supporting Files */,
 			);
@@ -253,7 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C345B935190DFF46004ACDA5 /* OPLHumanAI.m in Sources */,
+				C345B93F190E19E2004ACDA5 /* OPLAppController.m in Sources */,
+				C345B93B190E0216004ACDA5 /* GCDAsyncSocket.m in Sources */,
 				C3F8553C190DE72A0018FF85 /* OPLAppDelegate.m in Sources */,
+				C345B938190DFF5A004ACDA5 /* OPLComputerAI.m in Sources */,
 				C3F85535190DE72A0018FF85 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +499,7 @@
 				C3F85558190DE72A0018FF85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3F85559190DE72A0018FF85 /* Build configuration list for PBXNativeTarget "MorpheusTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +508,7 @@
 				C3F8555B190DE72A0018FF85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
