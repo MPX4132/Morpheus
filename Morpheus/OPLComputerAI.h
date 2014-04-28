@@ -10,7 +10,7 @@
 #import "OPLHumanAI.h"
 
 #define OPL_COMPUTERAI_DATABASE             @"Morpheus.db"
-#define OPL_COMPUTERAI_PRESPONSE_TIMEOUT    30
+#define OPL_COMPUTERAI_PRESPONSE_TIMEOUT    15
 
 @protocol OPLComputerAIDelegate; // To let the compiler know the protocol exists
 

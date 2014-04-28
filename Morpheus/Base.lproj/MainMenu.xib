@@ -17,6 +17,14 @@
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="R7n-53-rFm" customClass="OPLAppController">
+            <connections>
+                <outlet property="inputField" destination="zem-8s-HFv" id="ocA-h4-HVs"/>
+                <outlet property="outputField" destination="5J8-Y2-XVW" id="bTx-lJ-MWU"/>
+                <outlet property="progressIndicator" destination="qzh-mP-o4c" id="TSq-g9-8t8"/>
+                <outlet property="sendButton" destination="tCb-jC-XUq" id="JQI-3C-Vmk"/>
+            </connections>
+        </customObject>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="Morpheus" id="1Xt-HY-uBw">
@@ -667,7 +675,7 @@
             </items>
         </menu>
         <window title="Morpheus" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="130"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
@@ -675,6 +683,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="130"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="qzh-mP-o4c">
+                        <rect key="frame" x="437" y="92" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHJ-gD-s7x">
                         <rect key="frame" x="20" y="89" width="440" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -685,7 +697,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tCb-jC-XUq">
-                        <rect key="frame" x="417" y="90" width="38" height="19"/>
+                        <rect key="frame" x="433" y="90" width="24" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="roundRect" title=">" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Igy-Rp-fa4">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -694,11 +706,10 @@
 DQ
 </string>
                         </buttonCell>
+                        <connections>
+                            <action selector="send:" target="R7n-53-rFm" id="GtO-zW-oUf"/>
+                        </connections>
                     </button>
-                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="qzh-mP-o4c">
-                        <rect key="frame" x="428" y="92" width="16" height="16"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </progressIndicator>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5J8-Y2-XVW">
                         <rect key="frame" x="18" y="20" width="444" height="60"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -709,7 +720,7 @@ DQ
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zem-8s-HFv">
-                        <rect key="frame" x="20" y="89" width="389" height="22"/>
+                        <rect key="frame" x="32" y="92" width="393" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="Q55-rf-3GH">
                             <font key="font" metaFont="system"/>

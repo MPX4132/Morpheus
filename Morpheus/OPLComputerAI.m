@@ -34,9 +34,13 @@
                                           userInfo:nil
                                            repeats:NO];
 
-    [human respondToMessage:(query = message)];
+    responseTimer = [NSTimer scheduledTimerWithTimeInterval:OPL_COMPUTERAI_PRESPONSE_TIMEOUT
+                                                     target:self
+                                                   selector:@selector(computerResponse)
+                                                   userInfo:nil
+                                                    repeats:NO];
 
-    [responseTimer fire];
+    [human respondToMessage:(query = message)];
 }
 
 - (void)computerResponse {
@@ -47,7 +51,10 @@
 #pragma mark - HumanAI Delegate
 // ================================================================
 - (void)humanAI:(OPLHumanAI *)humanAI didRespondWithMessage:(NSString *)message {
-    if (responseTimer) [responseTimer invalidate];
+    if (responseTimer) {
+        [responseTimer invalidate];
+        responseTimer = nil;
+    }
 
     [self.delegate computerAI:self didRespondWithMessage:message];
 }
@@ -72,7 +79,7 @@
         return NULL;
     }
 
-
+    human = [[OPLHumanAI alloc] initWithDelegate:self];
 
     return self;
 }
