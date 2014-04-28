@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3F85529190DE72A0018FF85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F85528190DE72A0018FF85 /* Cocoa.framework */; };
+		C3F85533190DE72A0018FF85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F85531190DE72A0018FF85 /* InfoPlist.strings */; };
+		C3F85535190DE72A0018FF85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F85534190DE72A0018FF85 /* main.m */; };
+		C3F85539190DE72A0018FF85 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C3F85537190DE72A0018FF85 /* Credits.rtf */; };
+		C3F8553C190DE72A0018FF85 /* OPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F8553B190DE72A0018FF85 /* OPLAppDelegate.m */; };
+		C3F8553F190DE72A0018FF85 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F8553D190DE72A0018FF85 /* MainMenu.xib */; };
+		C3F85541190DE72A0018FF85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F85540190DE72A0018FF85 /* Images.xcassets */; };
+		C3F85548190DE72A0018FF85 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F85547190DE72A0018FF85 /* XCTest.framework */; };
+		C3F85549190DE72A0018FF85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F85528190DE72A0018FF85 /* Cocoa.framework */; };
+		C3F85551190DE72A0018FF85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F8554F190DE72A0018FF85 /* InfoPlist.strings */; };
+		C3F85553190DE72A0018FF85 /* MorpheusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F85552190DE72A0018FF85 /* MorpheusTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3F8554A190DE72A0018FF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3F8551D190DE72A0018FF85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3F85524190DE72A0018FF85;
+			remoteInfo = Morpheus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3F85525190DE72A0018FF85 /* Morpheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morpheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F85528190DE72A0018FF85 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C3F8552B190DE72A0018FF85 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C3F8552C190DE72A0018FF85 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C3F8552D190DE72A0018FF85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3F85530190DE72A0018FF85 /* Morpheus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Morpheus-Info.plist"; sourceTree = "<group>"; };
+		C3F85532190DE72A0018FF85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3F85534190DE72A0018FF85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3F85536190DE72A0018FF85 /* Morpheus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Morpheus-Prefix.pch"; sourceTree = "<group>"; };
+		C3F85538190DE72A0018FF85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C3F8553A190DE72A0018FF85 /* OPLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPLAppDelegate.h; sourceTree = "<group>"; };
+		C3F8553B190DE72A0018FF85 /* OPLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPLAppDelegate.m; sourceTree = "<group>"; };
+		C3F8553E190DE72A0018FF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C3F85540190DE72A0018FF85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3F85546190DE72A0018FF85 /* MorpheusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorpheusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F85547190DE72A0018FF85 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3F8554E190DE72A0018FF85 /* MorpheusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MorpheusTests-Info.plist"; sourceTree = "<group>"; };
+		C3F85550190DE72A0018FF85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3F85552190DE72A0018FF85 /* MorpheusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MorpheusTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3F85522190DE72A0018FF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F85529190DE72A0018FF85 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F85543190DE72A0018FF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F85549190DE72A0018FF85 /* Cocoa.framework in Frameworks */,
+				C3F85548190DE72A0018FF85 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3F8551C190DE72A0018FF85 = {
+			isa = PBXGroup;
+			children = (
+				C3F8552E190DE72A0018FF85 /* Morpheus */,
+				C3F8554C190DE72A0018FF85 /* MorpheusTests */,
+				C3F85527190DE72A0018FF85 /* Frameworks */,
+				C3F85526190DE72A0018FF85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3F85526190DE72A0018FF85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3F85525190DE72A0018FF85 /* Morpheus.app */,
+				C3F85546190DE72A0018FF85 /* MorpheusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3F85527190DE72A0018FF85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F85528190DE72A0018FF85 /* Cocoa.framework */,
+				C3F85547190DE72A0018FF85 /* XCTest.framework */,
+				C3F8552A190DE72A0018FF85 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3F8552A190DE72A0018FF85 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F8552B190DE72A0018FF85 /* AppKit.framework */,
+				C3F8552C190DE72A0018FF85 /* CoreData.framework */,
+				C3F8552D190DE72A0018FF85 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C3F8552E190DE72A0018FF85 /* Morpheus */ = {
+			isa = PBXGroup;
+			children = (
+				C3F8553A190DE72A0018FF85 /* OPLAppDelegate.h */,
+				C3F8553B190DE72A0018FF85 /* OPLAppDelegate.m */,
+				C3F8553D190DE72A0018FF85 /* MainMenu.xib */,
+				C3F85540190DE72A0018FF85 /* Images.xcassets */,
+				C3F8552F190DE72A0018FF85 /* Supporting Files */,
+			);
+			path = Morpheus;
+			sourceTree = "<group>";
+		};
+		C3F8552F190DE72A0018FF85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F85530190DE72A0018FF85 /* Morpheus-Info.plist */,
+				C3F85531190DE72A0018FF85 /* InfoPlist.strings */,
+				C3F85534190DE72A0018FF85 /* main.m */,
+				C3F85536190DE72A0018FF85 /* Morpheus-Prefix.pch */,
+				C3F85537190DE72A0018FF85 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3F8554C190DE72A0018FF85 /* MorpheusTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3F85552190DE72A0018FF85 /* MorpheusTests.m */,
+				C3F8554D190DE72A0018FF85 /* Supporting Files */,
+			);
+			path = MorpheusTests;
+			sourceTree = "<group>";
+		};
+		C3F8554D190DE72A0018FF85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F8554E190DE72A0018FF85 /* MorpheusTests-Info.plist */,
+				C3F8554F190DE72A0018FF85 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3F85524190DE72A0018FF85 /* Morpheus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F85556190DE72A0018FF85 /* Build configuration list for PBXNativeTarget "Morpheus" */;
+			buildPhases = (
+				C3F85521190DE72A0018FF85 /* Sources */,
+				C3F85522190DE72A0018FF85 /* Frameworks */,
+				C3F85523190DE72A0018FF85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Morpheus;
+			productName = Morpheus;
+			productReference = C3F85525190DE72A0018FF85 /* Morpheus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3F85545190DE72A0018FF85 /* MorpheusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F85559190DE72A0018FF85 /* Build configuration list for PBXNativeTarget "MorpheusTests" */;
+			buildPhases = (
+				C3F85542190DE72A0018FF85 /* Sources */,
+				C3F85543190DE72A0018FF85 /* Frameworks */,
+				C3F85544190DE72A0018FF85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3F8554B190DE72A0018FF85 /* PBXTargetDependency */,
+			);
+			name = MorpheusTests;
+			productName = MorpheusTests;
+			productReference = C3F85546190DE72A0018FF85 /* MorpheusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3F8551D190DE72A0018FF85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OPL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Organization of Programming Languages";
+				TargetAttributes = {
+					C3F85545190DE72A0018FF85 = {
+						TestTargetID = C3F85524190DE72A0018FF85;
+					};
+				};
+			};
+			buildConfigurationList = C3F85520190DE72A0018FF85 /* Build configuration list for PBXProject "Morpheus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3F8551C190DE72A0018FF85;
+			productRefGroup = C3F85526190DE72A0018FF85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3F85524190DE72A0018FF85 /* Morpheus */,
+				C3F85545190DE72A0018FF85 /* MorpheusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3F85523190DE72A0018FF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F85533190DE72A0018FF85 /* InfoPlist.strings in Resources */,
+				C3F85541190DE72A0018FF85 /* Images.xcassets in Resources */,
+				C3F85539190DE72A0018FF85 /* Credits.rtf in Resources */,
+				C3F8553F190DE72A0018FF85 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F85544190DE72A0018FF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F85551190DE72A0018FF85 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3F85521190DE72A0018FF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F8553C190DE72A0018FF85 /* OPLAppDelegate.m in Sources */,
+				C3F85535190DE72A0018FF85 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F85542190DE72A0018FF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F85553190DE72A0018FF85 /* MorpheusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3F8554B190DE72A0018FF85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3F85524190DE72A0018FF85 /* Morpheus */;
+			targetProxy = C3F8554A190DE72A0018FF85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3F85531190DE72A0018FF85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F85532190DE72A0018FF85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3F85537190DE72A0018FF85 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F85538190DE72A0018FF85 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C3F8553D190DE72A0018FF85 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F8553E190DE72A0018FF85 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C3F8554F190DE72A0018FF85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F85550190DE72A0018FF85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3F85554190DE72A0018FF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C3F85555190DE72A0018FF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C3F85557190DE72A0018FF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morpheus/Morpheus-Prefix.pch";
+				INFOPLIST_FILE = "Morpheus/Morpheus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3F85558190DE72A0018FF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morpheus/Morpheus-Prefix.pch";
+				INFOPLIST_FILE = "Morpheus/Morpheus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C3F8555A190DE72A0018FF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Morpheus.app/Contents/MacOS/Morpheus";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morpheus/Morpheus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MorpheusTests/MorpheusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C3F8555B190DE72A0018FF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Morpheus.app/Contents/MacOS/Morpheus";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morpheus/Morpheus-Prefix.pch";
+				INFOPLIST_FILE = "MorpheusTests/MorpheusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3F85520190DE72A0018FF85 /* Build configuration list for PBXProject "Morpheus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F85554190DE72A0018FF85 /* Debug */,
+				C3F85555190DE72A0018FF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3F85556190DE72A0018FF85 /* Build configuration list for PBXNativeTarget "Morpheus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F85557190DE72A0018FF85 /* Debug */,
+				C3F85558190DE72A0018FF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3F85559190DE72A0018FF85 /* Build configuration list for PBXNativeTarget "MorpheusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F8555A190DE72A0018FF85 /* Debug */,
+				C3F8555B190DE72A0018FF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3F8551D190DE72A0018FF85 /* Project object */;
+}
