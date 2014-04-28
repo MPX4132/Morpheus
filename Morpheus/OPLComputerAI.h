@@ -10,7 +10,7 @@
 #import "OPLHumanAI.h"
 #import "OPLDatabaseFile.h"
 
-#define OPL_COMPUTERAI_PRESPONSE_TIMEOUT    5.0
+#define OPL_COMPUTERAI_PRESPONSE_TIMEOUT    15.0
 
 @protocol OPLComputerAIDelegate; // To let the compiler know the protocol exists
 
