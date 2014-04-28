@@ -12,6 +12,8 @@
     OPLHumanAI  *human;
     NSTimer     *responseTimer;
     NSString    *query;
+
+    OPLDatabaseFile *database;
 }
 
 - (void)computerResponse;
@@ -44,7 +46,7 @@
 }
 
 - (void)computerResponse {
-    NSLog(@"I'll respond now!");
+    [self.delegate computerAI:self didRespondWithMessage:[database answerForQuery:query]];
 }
 
 // ================================================================
@@ -80,6 +82,8 @@
     }
 
     human = [[OPLHumanAI alloc] initWithDelegate:self];
+    database = [OPLDatabaseFile new];
+
 
     return self;
 }

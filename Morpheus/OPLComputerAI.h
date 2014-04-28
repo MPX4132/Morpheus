@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "OPLHumanAI.h"
+#import "OPLDatabaseFile.h"
 
-#define OPL_COMPUTERAI_DATABASE             @"Morpheus.db"
-#define OPL_COMPUTERAI_PRESPONSE_TIMEOUT    15
+#define OPL_COMPUTERAI_PRESPONSE_TIMEOUT    15.0
 
 @protocol OPLComputerAIDelegate; // To let the compiler know the protocol exists
 
